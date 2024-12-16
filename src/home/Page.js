@@ -3,8 +3,9 @@ import List from "./List";
 
 function Page() {
     return (<>
-        <Herosec />
-        <List />
+        
+     <Herosec/>
+     <List/>
     </>);
 }
 

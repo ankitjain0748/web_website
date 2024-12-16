@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Heroimg from "../image/ss9-1.png"
 
 function Herosec() {
     return (
