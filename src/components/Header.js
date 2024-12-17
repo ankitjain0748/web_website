@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-// import logo from "../../assets/logo.png"
+import logo from "../image/logo.png"
 import { RiMenu3Line } from "react-icons/ri";
 import { IoCloseSharp } from "react-icons/io5";
 import toast from 'react-hot-toast';
 import { IoMdLogOut } from "react-icons/io";
+import { IoSearch } from "react-icons/io5";
 export default function Header() {
     const navigate = useNavigate()
     const token = localStorage && localStorage?.getItem("token")
@@ -18,13 +19,13 @@ export default function Header() {
         toast.success("Logout Successfully ")
     }
     return (
-        <div className='relative flex items-center justify-between max-w-[1230px] m-auto px-[15px] z-[9] pt-[10px]'>
+        <div className='relative flex items-center justify-between max-w-[1320px] m-auto px-[15px] py-[25px] z-[9]'>
             <Link to={"/"}>
-                {/* <img src={logo} alt="Event Management " /> */}
+                <img className='max-w-[150px]' src={logo} alt="Event Management " />
             </Link>
             {/* desktop */}
-            <div className='hidden lg:flex items-center gap-[10px] z-[5] p-4'>
-                <ul className='  lg:relative flex lg:flex-row items-center gap-[36px] md:gap-[20px] lg:gap-[36px] font-manrope font-[600] text-[15px] md:text-[18px] lg:text-[20px] text-white'>
+            <div className='hidden lg:flex items-center gap-[10px] z-[5] group'>
+                <ul className='  lg:relative flex lg:flex-row items-center gap-[36px] md:gap-[20px] lg:gap-[36px] font-manrope text-[1rem] font-[400] text-white'>
                     <li>
                         <Link to={"/"}>Home</Link>
                     </li>
@@ -59,6 +60,13 @@ export default function Header() {
                         </Link>
                     </li>
                 </ul>
+
+            </div>
+
+            <div className="">
+                <button className='text-white'>
+                    <IoSearch size={30} />
+                </button>
             </div>
 
             <div className={`flex lg:hidden ${menuOpen ? 'hidden' : ''}`}>
@@ -69,7 +77,7 @@ export default function Header() {
                     aria-expanded={menuOpen}
                     onClick={toggleMenu}
                 >
-                    <RiMenu3Line size={20} />
+                    <IoSearch size={20} />
                 </button>
             </div>
 
