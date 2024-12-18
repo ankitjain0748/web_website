@@ -9,7 +9,7 @@ import { FaPlay } from "react-icons/fa";
 function Herosec() {
     return (
         <div className="">
-            <div className="heroHome">
+            <div className="heroHome" >
                 <div className="w-[100%] max-w-[1320px] m-[auto] px-[15px] py-[100px] flex items-center gap-[15px] flex-wrap md:flex-nowrap">
                     <div className="w-[50%]">
                         <div className="flex gap-[27px] group text-white ">
@@ -40,24 +40,13 @@ function Herosec() {
                     </div>
 
 
-                    <div className="w-[50%] z-[1]">
+                    <div className="w-[50%] z-[1]" data-tilt>
                         <img className='' src={Illustration} alt="Event Management " />
                     </div>
 
                 </div>
             </div>
-            <div className="max-w-[1320px] mx-[auto] pt-[100px] pb-[100px]">
-                <div className="flex items-center gap-[15px]">
-                    <div className="w-[55%]">
-                        <h2 className="dots relative px-[10px] inline-flex mt-[30px] mb-[10px] text-[#09aff4] text-[15px] text-[1rem] font-[600] uppercase">Services</h2>
-                        <h2 className="text-[2.5rem] font-[500] text-white mb-[2px] capitalize">services we offer</h2>
-                        <p className="text-white text-[1rem] pr-[120px]">It sounds like NIT Solutions is launching an educational platform in Chomu focused on teaching web design, web development, and app development. This could be an excellent opportunity for individuals interested in gaining skills in these areas, especially considering the increasing demand for professionals with expertise in web and app development. Providing a platform for learning these skills could potentially benefit both aspiring developers and the tech industry in Chaum by fostering a more skilled workforce and facilitating innovation in digital technology.  <Link to={"/"} className="text-[#09aff4]"> Click Registration</Link></p>
-                    </div>
-                    <div className="w-[45%] flex items-center justify-end">
-                        <Link to={"/"} className="group inline-flex items-center gap-[10px] min-w-[180px] px-[35px] py-[15px] bg-[#09aff4] border-[2px] border-[#09aff4] rounded-tr-[15px] rounded-bl-[15px] text-[1.15rem] font-[500] text-[#fff] leading-[20px] capitalize text-center transition-all hover:bg-[transparent] border-[#09aff4] hover:text-[#09aff4] hover:transition-all">see all services <FaArrowRightLong className="group:hover:ms-[5px]" /></Link>
-                    </div>
-                </div>
-            </div>
+           
         </div>
     );
 }
