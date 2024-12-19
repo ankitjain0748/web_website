@@ -10,14 +10,11 @@ import choseimg from "../image/1.png";
 import { TbTargetArrow } from "react-icons/tb";
 import { IoRibbon } from "react-icons/io5";
 import { MdChat } from "react-icons/md";
-
 import { FaUser } from "react-icons/fa";
-import List from "./List";
-import TiltComponent from "./TiltComponent";
 import SwiperComponent from "./SwiperComponent";
 import ParticleBackground from "./ParticleBackground";
-
 import VanillaTilt from 'vanilla-tilt';
+import Testimonials from './Testimonials';
 
 function Page() {
 
@@ -295,6 +292,7 @@ function Page() {
 
             <SwiperComponent />
             <ParticleBackground />
+            <Testimonials/>
         </div>
 
 
