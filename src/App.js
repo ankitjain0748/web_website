@@ -1,12 +1,11 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
-import Page from './home/Page';
+import Page from './Home/Page';
 import Contact from './components/Contact';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import User from './User/Index';
 import About from './About/Index';
-import Index from './Services/Index';
 import Gallery from './Gallery/Gallery';
 import Prot from './protfolio/Prot';
 import BlogList from './Blog/Blog';

@@ -1,3 +1,4 @@
+import React, { useEffect, useRef } from 'react';
 import Herosec from "./Herosec";
 import { Link } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -12,8 +13,26 @@ import { MdChat } from "react-icons/md";
 
 import { FaUser } from "react-icons/fa";
 import List from "./List";
+import TiltComponent from "./TiltComponent";
+import SwiperComponent from "./SwiperComponent";
+import ParticleBackground from "./ParticleBackground";
+
+import VanillaTilt from 'vanilla-tilt';
 
 function Page() {
+
+    const tiltRef = useRef(null);
+
+    useEffect(() => {
+        if (tiltRef.current) {
+            VanillaTilt.init(tiltRef.current, {
+                max: 25, // Maximum tilt angle
+                speed: 400, // Speed of the tilt animation
+                glare: true, // Add glare effect
+                'max-glare': 0.5, // Maximum glare intensity
+            });
+        }
+    }, []);
     return (<>
 
         <Herosec />
@@ -140,7 +159,6 @@ function Page() {
                                 <p className="text-[1rem] font-[400] text-white opacity-[0.75]">At NIT Solutions, We boast about our sate-of-the-art labs equipped with all necessary hardware & software.</p>
                             </div>
                         </div>
-
                         <div className="group flex items-start gap-[20px]">
                             <div className="w-[20%] flex items-center justify-center w-[60px] h-[60px] bg-[#09aff440]  rounded-[5px] group-hover:bg-[#09aff4] group-hover:text-[#09aff4] transition-all group-hover:transition-all grop-hover:mt-[-5px]">
                                 <IoRibbon size={30} className="text-[#09aff4] group-hover:text-[#fff]" />
@@ -151,21 +169,31 @@ function Page() {
                             </div>
                         </div>
                     </div>
-
                     <div className="mt-[80px]">
                         <Link to={"/"} className="group inline-flex items-center gap-[10px] min-w-[180px] px-[35px] py-[15px] bg-[#09aff4] border-[2px] border-[#09aff4] rounded-tr-[15px] rounded-bl-[15px] text-[1.15rem] font-[500] text-[#fff] leading-[20px] capitalize text-center transition-all hover:bg-[transparent] border-[#09aff4] hover:text-[#09aff4] hover:transition-all">Get in touch </Link>
                     </div>
                 </div>
-
-                <div className="w-[50%]" data-tilt>
+                <div
+                    ref={tiltRef}
+                    className="tilt-box"
+                >
                     <img className='' src={trusted} alt="Event Management " />
                 </div>
+
+                {/* <div className="w-[50%]" data-tilt>
+                    <img className='' src={trusted} alt="Event Management " />
+                </div> */}
 
 
             </div>
 
             <div className="flex items-center flex-wrap md:flex-nowrap gap-[40px]">
-                <div className="w-[50%]" data-tilt>
+
+
+                <div
+                    ref={tiltRef}
+                    className="tilt-box w-[50%] "
+                >
                     <img className='' src={choseimg} alt="Event Management " />
                 </div>
 
@@ -240,7 +268,7 @@ function Page() {
                     <div className="w-[55%]">
                         <h2 className="dots relative px-[10px] inline-flex mt-[30px] mb-[10px] text-[#09aff4] text-[15px] text-[1rem] font-[600] uppercase">Profile</h2>
                         <h2 className="text-[2.5rem] font-[500] text-white mb-[2px] capitalize">NIT Students</h2>
-                        
+
                     </div>
                     <div className="w-[45%] flex items-center justify-end">
                         <Link to={"/"} className="group inline-flex items-center gap-[10px] min-w-[180px] px-[35px] py-[15px] bg-[#09aff4] border-[2px] border-[#09aff4] rounded-tr-[15px] rounded-bl-[15px] text-[1.15rem] font-[500] text-[#fff] leading-[20px] capitalize text-center transition-all hover:bg-[transparent] border-[#09aff4] hover:text-[#09aff4] hover:transition-all">see all services <FaArrowRightLong className="group:hover:ms-[5px]" /></Link>
@@ -248,23 +276,25 @@ function Page() {
                 </div>
                 <div className="grid grid-cols-4 gap-[15px]">
                     <div>
-                        <StudentCard / >
+                        <StudentCard />
                     </div>
 
                     <div>
-                        <StudentCard / >
+                        <StudentCard />
                     </div>
 
                     <div>
-                        <StudentCard / >
+                        <StudentCard />
                     </div>
 
                     <div>
-                        <StudentCard / >
+                        <StudentCard />
                     </div>
                 </div>
             </div>
 
+            <SwiperComponent />
+            <ParticleBackground />
         </div>
 
 
