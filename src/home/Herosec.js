@@ -8,6 +8,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { FaPlay } from "react-icons/fa";
 function Herosec() {
     return (
+
         <div className="">
             <div className="heroHome" >
                 <div className="w-[100%] max-w-[1320px] m-[auto] px-[15px] py-[100px] flex items-center gap-[15px] flex-wrap md:flex-nowrap">

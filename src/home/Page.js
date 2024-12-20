@@ -291,8 +291,9 @@ function Page() {
             </div>
 
             <SwiperComponent />
-            <ParticleBackground />
+           
             <Testimonials/>
+            <ParticleBackground/>
         </div>
 
 
