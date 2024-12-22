@@ -1,8 +1,10 @@
 import React, { useState, useRef } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
+import { FaAngleLeft } from "react-icons/fa6";
+import { FaAngleRight } from "react-icons/fa6";
 import "slick-carousel/slick/slick-theme.css";
-
+import testimonial from "../image/testimonial.jpeg";
 const Testimonials = () => {
 
   const sliderRef = useRef(null); // Reference to the Slider component
@@ -41,22 +43,20 @@ const Testimonials = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    nextArrow: <SamplePrevArrow />,
-    prevArrow: <SampleNextArrow />,
   };
 
   const testimonials = [
     {
       quote: "I’ve been part of tennis leagues for years, but TennisKhelo really takes things to another level...",
-      name: "Sahil Mittal",
-      role: "Player",
-      image: "https://storage.googleapis.com/tennis-khelo.appspot.com/documents/d90346f1-6bc4-4734-9db8-02eb93ca6f41/img-e562553c-2e19-4fb9-a9de-e61c97129ba8.jpg"
+      name: "Mukesh Kumawat",
+      role: "Founder",
+      image: testimonial , 
     },
     {
       quote: "What I love about TennisKhelo is how simple it is to stay organized...",
       name: "Gourav Choudhary",
-      role: "Player",
-      image: "https://storage.googleapis.com/tennis-khelo.appspot.com/documents/9bec390d-c747-48c8-b48f-5cb20aab3997/img-3d95c76f-fe7f-4c5c-aa10-c507d7725af2.jpg"
+      role: "Co Founder",
+      image: testimonial , 
     },
     // Add more testimonials as needed
   ];
@@ -66,13 +66,18 @@ const Testimonials = () => {
       <Slider ref={sliderRef} {...settings}>
         {testimonials.map((testimonial, index) => (
           <div key={index}>
-            <p className="text-[16px] lg:text-[20px] font-poppins italic font-[400] leading-[24px] lg:leading-[30px] text-[#FFFFFF] opacity-80 tracking-[-0.035em] mt-3">
-              {testimonial.quote}
-            </p>
-            <h2 className="mt-3 text-center text-uppercase font-oswald text-[28px] font-semibold">
+            <div className='w-[100px] h-[100px] m-[auto] '>
+            <img src={testimonial.image} alt={`Slide ${index + 1}`} className="w-[70px] h-[70px] border-[3px] border-[#09aff4] rounded-[100px]" />
+            </div>
+            <div className='max-w-[500px] text-center m-auto italic mb-[50px]'>
+              <p className="text-[1.5rem] text-center text-white leading-[1.7] italic" >
+                {testimonial.quote}
+              </p>
+            </div>
+            <h2 className="text-[1.5rem] text-center text-white leading-[1.7]">
               {testimonial.name}
             </h2>
-            <p className="text-gray-400 font-poppins">{testimonial.role}</p>
+            <p className="text-[1rem] text-center text-white leading-[1.1]">{testimonial.role}</p>
           </div>
         ))}
       </Slider>
@@ -80,16 +85,16 @@ const Testimonials = () => {
       {/* Custom navigation buttons */}
       <div className="absolute top-1/2 left-0 right-0 flex justify-between px-4 transform -translate-y-1/2">
         <button
-          className="swiper-button-prev bg-gray-300 text-black py-2 px-4 rounded-full hover:bg-gray-400"
+          className="flex items-center justify-center w-[45px] h-[45px] swiper-button-next bg-[#ffffff40] hover:bg-[#09aff4]"
           onClick={() => sliderRef.current.slickPrev()} // Link to the previous slide
         >
-          Previous
+         <FaAngleLeft className='text-white' />
         </button>
         <button
-          className="swiper-button-next bg-gray-300 text-black py-2 px-4 rounded-full hover:bg-gray-400"
+          className="flex items-center justify-center w-[45px] h-[45px] swiper-button-next bg-[#ffffff40] hover:bg-[#09aff4]"
           onClick={() => sliderRef.current.slickNext()} // Link to the next slide
         >
-          Next
+          <FaAngleRight  className='text-white' />
         </button>
       </div>
     </div>

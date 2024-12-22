@@ -1,3 +1,4 @@
+import React, { useEffect, useRef } from 'react';
 import { Link } from "react-router-dom";
 import { FaFacebookF } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
@@ -6,7 +7,23 @@ import { FaRegStar } from "react-icons/fa";
 import Illustration from "../image/illustration-1.png";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FaPlay } from "react-icons/fa";
+import VanillaTilt from 'vanilla-tilt';
+
 function Herosec() {
+
+    const tiltRef = useRef(null);
+
+    useEffect(() => {
+        if (tiltRef.current) {
+            VanillaTilt.init(tiltRef.current, {
+                max: 25,
+                speed: 400, 
+              
+            });
+        }
+    }, []);
+
+
     return (
         <div className="">
             <div className="heroHome" >
@@ -40,7 +57,7 @@ function Herosec() {
                     </div>
 
 
-                    <div className="w-[50%] z-[1]" data-tilt>
+                    <div  ref={tiltRef} className="tilt-box  w-[50%] z-[1]" >
                         <img className='' src={Illustration} alt="Event Management " />
                     </div>
 

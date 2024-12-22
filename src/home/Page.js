@@ -12,23 +12,33 @@ import { IoRibbon } from "react-icons/io5";
 import { MdChat } from "react-icons/md";
 import { FaUser } from "react-icons/fa";
 import SwiperComponent from "./SwiperComponent";
-import ParticleBackground from "./ParticleBackground";
+// import ParticleBackground from "./ParticleBackground";
 import VanillaTilt from 'vanilla-tilt';
 import Testimonials from './Testimonials';
 
 function Page() {
 
     const tiltRef = useRef(null);
+    const tiltRef2 = useRef(null);
 
     useEffect(() => {
         if (tiltRef.current) {
             VanillaTilt.init(tiltRef.current, {
                 max: 25, // Maximum tilt angle
                 speed: 400, // Speed of the tilt animation
-                glare: true, // Add glare effect
-                'max-glare': 0.5, // Maximum glare intensity
+
             });
         }
+
+        if (tiltRef2.current) {
+            VanillaTilt.init(tiltRef2.current, {
+                max: 25, // Maximum tilt angle
+                speed: 400, // Speed of the tilt animation
+
+            });
+        }
+
+
     }, []);
     return (<>
 
@@ -86,7 +96,7 @@ function Page() {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-3 gap-[30px] row-gap-[40px]">
+                <div className="grid grid-cols-4 gap-[30px] row-gap-[40px]">
                     <div>
                         <ServiceCard />
                     </div>
@@ -170,11 +180,8 @@ function Page() {
                         <Link to={"/"} className="group inline-flex items-center gap-[10px] min-w-[180px] px-[35px] py-[15px] bg-[#09aff4] border-[2px] border-[#09aff4] rounded-tr-[15px] rounded-bl-[15px] text-[1.15rem] font-[500] text-[#fff] leading-[20px] capitalize text-center transition-all hover:bg-[transparent] border-[#09aff4] hover:text-[#09aff4] hover:transition-all">Get in touch </Link>
                     </div>
                 </div>
-                <div
-                    ref={tiltRef}
-                    className="tilt-box"
-                >
-                    <img className='' src={trusted} alt="Event Management " />
+                <div ref={tiltRef2} className="mk tilt-box w-[50%]">
+                    <img className='max-w-[100%]' src={trusted} alt="Event Management " />
                 </div>
 
                 {/* <div className="w-[50%]" data-tilt>
@@ -187,10 +194,7 @@ function Page() {
             <div className="flex items-center flex-wrap md:flex-nowrap gap-[40px]">
 
 
-                <div
-                    ref={tiltRef}
-                    className="tilt-box w-[50%] "
-                >
+                <div ref={tiltRef} className="tilt-box w-[50%] ">
                     <img className='' src={choseimg} alt="Event Management " />
                 </div>
 
@@ -233,7 +237,7 @@ function Page() {
                 </div>
             </div>
 
-            <div className="grid grid-cols-4 gap-[15px] mt-[200px] mb-[200px]">
+            <div className="grid grid-cols-4 gap-[15px] mt-[200px] mb-[150px]">
                 <div className="flex flex-col items-center justify-center border-[1px] border-t-[4px] border-[#09aff4] rounded-[10px] h-[230px]">
                     <MdOutlineLightbulb className="text-[#09aff4]" size={50} />
                     <h2 className="mt-[5px] mb-[5px] text-[3rem] text-white font-[600]">2000+</h2>
@@ -268,10 +272,10 @@ function Page() {
 
                     </div>
                     <div className="w-[45%] flex items-center justify-end">
-                        <Link to={"/"} className="group inline-flex items-center gap-[10px] min-w-[180px] px-[35px] py-[15px] bg-[#09aff4] border-[2px] border-[#09aff4] rounded-tr-[15px] rounded-bl-[15px] text-[1.15rem] font-[500] text-[#fff] leading-[20px] capitalize text-center transition-all hover:bg-[transparent] border-[#09aff4] hover:text-[#09aff4] hover:transition-all">see all services <FaArrowRightLong className="group:hover:ms-[5px]" /></Link>
+                        <Link to={"/"} className="group inline-flex items-center gap-[10px] min-w-[180px] px-[35px] py-[15px] bg-[#09aff4] border-[2px] border-[#09aff4] rounded-tr-[15px] rounded-bl-[15px] text-[1.15rem] font-[500] text-[#fff] leading-[20px] capitalize text-center transition-all hover:bg-[transparent] border-[#09aff4] hover:text-[#09aff4] hover:transition-all">see all post <FaArrowRightLong className="group:hover:ms-[5px]" /></Link>
                     </div>
                 </div>
-                <div className="grid grid-cols-4 gap-[15px]">
+                <div className="grid grid-cols-4 gap-[25px]">
                     <div>
                         <StudentCard />
                     </div>
@@ -290,9 +294,60 @@ function Page() {
                 </div>
             </div>
 
-            <SwiperComponent />
-            <ParticleBackground />
-            <Testimonials/>
+
+            <div className="mb-[100px]">
+                <div className="flex items-center gap-[15px] pb-[70px]">
+                    <div className="w-[55%]">
+                        <h2 className="dots relative px-[10px] inline-flex mt-[30px] mb-[10px] text-[#09aff4] text-[15px] text-[1rem] font-[600] uppercase">Profile</h2>
+                        <h2 className="text-[2.5rem] font-[500] text-white mb-[2px] capitalize">Placements Students</h2>
+
+                    </div>
+                    <div className="w-[45%] flex items-center justify-end">
+                        <Link to={"/"} className="group inline-flex items-center gap-[10px] min-w-[180px] px-[35px] py-[15px] bg-[#09aff4] border-[2px] border-[#09aff4] rounded-tr-[15px] rounded-bl-[15px] text-[1.15rem] font-[500] text-[#fff] leading-[20px] capitalize text-center transition-all hover:bg-[transparent] border-[#09aff4] hover:text-[#09aff4] hover:transition-all">see all post <FaArrowRightLong className="group:hover:ms-[5px]" /></Link>
+                    </div>
+                </div>
+                <div className="grid grid-cols-4 gap-[25px]">
+                    <div>
+                        <StudentCard />
+                    </div>
+
+                    <div>
+                        <StudentCard />
+                    </div>
+
+                    <div>
+                        <StudentCard />
+                    </div>
+
+                    <div>
+                        <StudentCard />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div className='bg-[#09aff4] px-[90px]'>
+            <div className='max-w-[1320px] mx-[auto] pt-[100px] pb-[100px]'>
+                <h2 className='text-[1.75rem] text-[#fff] text-center mb-[60px] font-[500]'>TOP PLACEMENTS IN</h2>
+                <div>
+                    <SwiperComponent />
+                </div>
+            </div>
+        </div>
+
+        <div className='bg-[#060922] px-[90px]'>
+            <div className='max-w-[1320px] mx-[auto] pt-[100px] pb-[100px]'>
+                <div className='text-center'>
+
+                    <h2 className="dots relative px-[10px] inline-flex mt-[30px] mb-[5px] text-[#09aff4] text-[15px] text-[1rem] font-[600] uppercase text-center justify-center">Testimonials</h2>
+                </div>
+
+                <h2 className="text-[2.5rem] font-[500] text-white mb-[2px] capitalize text-center">NIT testmonials</h2>
+
+                <div>
+                <Testimonials />
+                </div>
+            </div>
         </div>
 
 
