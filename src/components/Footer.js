@@ -7,14 +7,14 @@ function Footer() {
   return (
     <>
       <footer class="bg-[#060922]">
-        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="max-w-[1320px] px-[15px] mx-auto p-4 py-6 lg:py-8">
           <div class="md:flex md:justify-between">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 sm:gap-6">
+            <div className="flex flex-wrap md:flex-nowrap gap-[40px]">
               {/* First Column - Extra Space */}
-              <div className="mb-6 md:mb-0 md:pl-6">
+              <div className="w-[41%]">
                 <a href="https://flowbite.com/" className="flex items-center">
                   <img src={nitsky} className="max-w-[150px]" alt="Logo" /></a>
-                <div className="flex flex-col items-center justify-center text-white p-6">
+                <div className="flex flex-col items-center justify-center text-white pt-[20px]">
                   <div className="">
                     <p className="text-lg mb-6 ">
                       Master the art of Mobile App through blend of design and technology under the guidance of our experienced trainers.
@@ -47,7 +47,7 @@ function Footer() {
               </div>
 
               {/* Column 2 */}
-              <div className="flex flex-col items-center">
+              <div className="w-[15%] flex flex-col items-start">
                 <h2 className="mb-6 text-[20px] font-[500] text-white">
                   Useful Links
                 </h2>
@@ -87,7 +87,7 @@ function Footer() {
               </div>
 
               {/* Column 3 */}
-              <div className="flex flex-col items-center">
+              <div className="w-[15%] flex flex-col items-start">
                 <h2 className="mb-6 text-[20px] font-[500] text-white">
                   Resources
                 </h2>
@@ -128,7 +128,7 @@ function Footer() {
 
               {/* Last Column - Extra Space */}
 
-              <div className="md:pr-6">
+              <div className="w-[25%] md:pr-6">
                 <h2 className="mb-6 text-[20px] font-[500] text-white">
                   Contact Information
                 </h2>
@@ -157,7 +157,7 @@ function Footer() {
                   </li>
                 </ul>
 
-                <div className="p-6 flex justify-start items-center gap-[10px] ">
+                <div className="pt-[35px] flex justify-start items-center gap-[10px] ">
                   <div className="bg-[#09aff4] space-x-3 p-[8px]  text-white  rounded-md ">
                     <a
                       href="https://www.facebook.com"
@@ -210,7 +210,7 @@ function Footer() {
 
 
 
-          <div className="pt-[50px] pb-[30px]  flex justify-between items-center text-sm">
+          <div className="pt-[50px] pb-[10px]  flex justify-between items-center text-sm">
             {/* Left Section */}
             <div className="flex items-center space-x-2">
               <span className="text-white">© 2025 Created by:</span>
