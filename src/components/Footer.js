@@ -9,9 +9,9 @@ function Footer() {
       <footer class="bg-[#060922]">
         <div class="max-w-[1320px] px-[15px] mx-auto p-4 py-6 lg:py-8">
           <div class="md:flex md:justify-between">
-            <div className="flex flex-wrap md:flex-nowrap gap-[40px]">
+            <div className="flex flex-wrap lg:flex-nowrap gap-[20px] lg:gap-[40px]">
               {/* First Column - Extra Space */}
-              <div className="w-[41%]">
+              <div className="w-[100%] mb-[40px] lg:mb-[0] lg:w-[41%]">
                 <a href="https://flowbite.com/" className="flex items-center">
                   <img src={nitsky} className="max-w-[150px]" alt="Logo" /></a>
                 <div className="flex flex-col items-center justify-center text-white pt-[20px]">
@@ -47,7 +47,7 @@ function Footer() {
               </div>
 
               {/* Column 2 */}
-              <div className="w-[15%] flex flex-col items-start">
+              <div className="w-[100%] md:w-[25%] lg:w-[15%] flex flex-col items-start">
                 <h2 className="mb-6 text-[20px] font-[500] text-white">
                   Useful Links
                 </h2>
@@ -87,7 +87,7 @@ function Footer() {
               </div>
 
               {/* Column 3 */}
-              <div className="w-[15%] flex flex-col items-start">
+              <div className="w-[100%] md:w-[25%] lg:w-[15%] flex flex-col items-start">
                 <h2 className="mb-6 text-[20px] font-[500] text-white">
                   Resources
                 </h2>
@@ -128,7 +128,7 @@ function Footer() {
 
               {/* Last Column - Extra Space */}
 
-              <div className="w-[25%] md:pr-6">
+              <div className="w-[100%] md:w-[40%] lg:w-[25%] ">
                 <h2 className="mb-6 text-[20px] font-[500] text-white">
                   Contact Information
                 </h2>
@@ -210,7 +210,7 @@ function Footer() {
 
 
 
-          <div className="pt-[50px] pb-[10px]  flex justify-between items-center text-sm">
+          <div className="pt-[50px] pb-[10px]  flex flex-wrap md:flex-nowrap justify-center md:justify-between items-center text-sm">
             {/* Left Section */}
             <div className="flex items-center space-x-2">
               <span className="text-white">© 2025 Created by:</span>

@@ -6,6 +6,7 @@ import { IoCloseSharp } from "react-icons/io5";
 import toast from 'react-hot-toast';
 import { IoMdLogOut } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";
+import { IoMdMenu } from "react-icons/io";
 export default function Header() {
     const navigate = useNavigate()
     const token = localStorage && localStorage?.getItem("token")
@@ -66,18 +67,19 @@ export default function Header() {
             <div className="">
                 <button className='text-white'>
                     <IoSearch size={30} />
+                    
                 </button>
             </div>
 
             <div className={`flex lg:hidden ${menuOpen ? 'hidden' : ''}`}>
                 <button
                     type="button"
-                    className="absolute right-[15px] top-[10px] z-[1] inline-flex items-center justify-center rounded-[3px] w-[48px] h-[45px] bg-[#EB3465] text-white hover:bg-[#EB3465] focus:bg-[#EB3465] focus:ring-2 focus:ring-inset focus:ring-white"
+                    className="absolute right-[15px] top-[30px] z-[1] inline-flex items-center justify-center rounded-[3px] w-[48px] h-[45px] bg-[#09acf4] text-white hover:bg-[#EB3465] focus:bg-[#EB3465] focus:ring-2 focus:ring-inset focus:ring-white"
                     aria-controls="mobile-menu"
                     aria-expanded={menuOpen}
                     onClick={toggleMenu}
                 >
-                    <IoSearch size={20} />
+                    <IoMdMenu size={30} />
                 </button>
             </div>
 
@@ -85,17 +87,18 @@ export default function Header() {
             <div className={`lg:hidden  ${menuOpen ? 'block' : 'hidden'}`}>
                 <button
                     type="button"
-                    className="absolute right-[15px] top-[10px] z-[1] inline-flex items-center justify-center rounded-[3px] w-[48px] h-[45px] bg-[#EB3465] text-white hover:bg-[#EB3465] focus:bg-[#EB3465] focus:ring-2 focus:ring-inset focus:ring-white"
+                    className="absolute right-[15px] top-[30px] z-[1] inline-flex items-center justify-center rounded-[3px] w-[48px] h-[45px] bg-[#09acf4] text-white hover:bg-[#EB3465] focus:bg-[#EB3465] focus:ring-2 focus:ring-inset focus:ring-white"
                     aria-controls="mobile-menu"
                     aria-expanded={menuOpen}
                     onClick={toggleMenu}
                 >
+                   
                     <IoCloseSharp size={25} />
 
                 </button>
 
                 {/* Mobile Menu */}
-                <div id="mobile-menu " className='absolute top-0 right-[15px] 11h-full pt-[60px] '>
+                <div id="mobile-menu " className='absolute top-[20px] right-[15px] 11h-full pt-[60px] '>
                     <ul className="relative bg-[#222] capitalize	 w-[250px] z-[9] h-full flex flex-col gap-[15px] font-manrope font-[600] text-[15px] md:text-[18px] lg:text-[20px] text-white px-[20px] pt-[20px] pb-[30px] rounded-[5px] ">
                         <li>
                             <Link to={"/"}>Home</Link>

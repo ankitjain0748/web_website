@@ -46,7 +46,7 @@ function OfficeLocations() {
                 </div>
                 <a
                 href={`mailto:${office.email}`}
-                className="text-white hover:text-gray-400"
+                className="text-white hover:text-gray-400 break-words"
               >
                 {office.email}
               </a>
