@@ -26,14 +26,14 @@ function RegistrationForm() {
   };
 
   return (
-    <section className="container mx-auto px-6 py-10">
-      <h1 className="text-2xl  text-white font-bold text-center mb-8">Registration Open</h1>
+    <section className="max-w-[1320px] mx-[auto] pt-[50px] px-[15px]">
+      <h1 className="text-[34px] text-white font-[500] text-center mb-8">Registration Open</h1>
       <form onSubmit={handleSubmit} className="space-y-6">
         {/* Name, Mobile, Address Row */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           <div>
             <label htmlFor="name" className="block text-lg font-medium text-white">
-              Name *
+              Name <sup className="text-[#f00000]">*</sup>
             </label>
             <input
               type="text"
@@ -41,13 +41,14 @@ function RegistrationForm() {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="mt-1 block w-full p-4 border border-gray-300 "
+              className="mt-1 block w-full p-4 border border-[#45475A] bg-transparent text-[15px] text-white 
+              hover:border-[#09aff4]  focus:border-[#09aff4] focus:outline-1"
               required
             />
           </div>
           <div>
             <label htmlFor="mobile" className="block text-lg font-medium text-white">
-              Mobile *
+              Mobile <sup className="text-[#f00000]">*</sup>
             </label>
             <input
               type="text"
@@ -55,13 +56,14 @@ function RegistrationForm() {
               name="mobile"
               value={formData.mobile}
               onChange={handleChange}
-              className="mt-1 block w-full p-4 border border-gray-300 "
+              className="mt-1 block w-full p-4 border border-[#45475A] bg-transparent text-[15px] text-white 
+              hover:border-[#09aff4]  focus:border-[#09aff4] focus:outline-1 "
               required
             />
           </div>
           <div>
             <label htmlFor="address" className="block text-lg font-medium text-white">
-              Address *
+              Address <sup className="text-[#f00000]">*</sup>
             </label>
             <input
               type="text"
@@ -69,7 +71,8 @@ function RegistrationForm() {
               name="address"
               value={formData.address}
               onChange={handleChange}
-              className="mt-1 block w-full p-4 border border-gray-300 "
+              className="mt-1 block w-full p-4 border border-[#45475A] bg-transparent text-[15px] text-white 
+              hover:border-[#09aff4]  focus:border-[#09aff4] focus:outline-1"
               required
             />
           </div>
@@ -79,7 +82,7 @@ function RegistrationForm() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           <div>
             <label htmlFor="email" className="block text-lg font-medium text-white">
-              E-Mail *
+              E-Mail <sup className="text-[#f00000]">*</sup>
             </label>
             <input
               type="email"
@@ -87,43 +90,47 @@ function RegistrationForm() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="mt-1 block w-full p-4 border border-gray-300 "
+              className="mt-1 block w-full p-4 border border-[#45475A] bg-transparent text-[15px] text-white 
+              hover:border-[#09aff4]  focus:border-[#09aff4] focus:outline-1"
               required
             />
           </div>
           <div>
             <label htmlFor="category" className="block text-lg font-medium text-white">
-              Select Category *
+              Select Category <sup className="text-[#f00000]">*</sup>
             </label>
             <select
               id="category"
               name="category"
               value={formData.category}
               onChange={handleChange}
-              className="mt-1 block w-full p-4 border border-gray-300 "
+              className="mt-1 block w-full p-4 border border-[#45475A] bg-transparent text-[15px] text-[#fff] 
+              hover:border-[#09aff4]  focus:border-[#09aff4] focus:outline-1"
               required
             >
-              <option value="">Select Category</option>
-              <option value="M">M</option>
-              <option value="F">F</option>
+              <option className="text-[#000]" value="">Select Category</option>
+              <option className="text-[#000]" value="M">DCA</option>
+              <option className="text-[#000]" value="F">O Level</option>
             </select>
           </div>
           <div>
             <label htmlFor="gender" className="block text-lg font-medium text-white">
-              Gender *
+              Gender <sup className="text-[#f00000]">*</sup>
             </label>
-            <select
-              id="gender"
-              name="gender"
-              value={formData.gender}
-              onChange={handleChange}
-              className="mt-1 block w-full p-4 border border-gray-300 "
-              required
-            >
-              <option value="">Select Gender</option>
-              <option value="Male">Male</option>
-              <option value="Female">Female</option>
-            </select>
+            <div className="mt-[10px]">
+              <div>
+                <label className="flex items-center gap-[5px] text-white text-[18px] font-[600]">
+                  <input type="radio" id="Gender" name="Gender" />
+                  M
+                </label>
+              </div>
+              <div>
+                <label className="flex items-center gap-[5px] text-white text-[18px] font-[600]">
+                  <input type="radio" id="Gender" name="Gender"/>
+                  F
+                </label>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -131,10 +138,8 @@ function RegistrationForm() {
         <div className="flex justify-start">
           <button
             type="submit"
-            className="bg-sky-500	 text-white text-[18px] rounded-md py-4 px-4  hover:bg-sky-600"
-          >
-            Submit
-          </button>
+            className="group inline-flex items-center justify-center gap-[10px] min-w-[140px] px-[15px] py-[15px] bg-[#09aff4] border-[2px] border-[#09aff4] rounded-tr-[15px] rounded-bl-[15px] text-[1.15rem] font-[500] text-[#fff] leading-[20px] capitalize text-center transition-all hover:bg-[transparent] border-[#09aff4] hover:text-[#09aff4] hover:transition-all"
+          >Submit</button>
         </div>
       </form>
       <OfficeLocations />

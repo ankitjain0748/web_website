@@ -24,33 +24,54 @@ function OfficeLocations() {
   ];
 
   return (
-    <section className="container mx-auto px-6 py-10">
-      <h1 className="text-2xl font-bold text-white text-center mb-8">Our Offices Around the City</h1>
+    <section className="max-w-[1320px] mx-[auto] pt-[50px] px-[15px] pb-[60px]">
+      <h1 className="text-[34px] text-white font-[500] text-center mb-8">Our Offices Around the City</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {offices.map((office, index) => (
           <div
             key={index}
-            className="p-6 border border-gray-200 rounded-lg shadow-md hover:shadow-xl transition-shadow bg-gray-800"
+            className="h-[370px] px-[15px] py-[20px] flex flex-col items-start justify-start border-[1px] border-t-[4px] border-t-[#09AFF4] border-[#06426B] "
           >
-            <h2 className="text-2xl font-bold text-white mt-4 mb-4 ">{office.location}</h2>
-            <p className="text-lg text-white mt-4 mb-4">
+            <h2 className="relative pb-[10px] text-2xl font-bold text-white mt-4 mb-4 ">{office.location} <span className='w-[65px] absolute bottom-[0] left-[0] block  border-b-[2px] border-[#09aff4]'></span> </h2>
+            <p className="text-[19px] text-[#BEBFC5] font-[600] mt-4 mb-4">
               {office.address}
             </p>
-            <p className="text-lg text-white mt-4 mb-4">
-              <FaEnvelope className="inline-block mr-2 text-red-500" />
-              <a
+            <div className="flex items-center justify-center gap-[13px] text-lg text-white mt-4 mb-4">
+              <div className='w-[45px] h-[45px] bg-[#062242] flex items-center justify-center rounded-[4px] text-center'>
+                <FaEnvelope className="inline-block text-[#09aff4]" />
+              </div>
+              <div className='flex flex-col items-start justify-start'>
+                <div className='text-[#09aff4] text-[20px] font-[500]'>
+                  Email:
+                </div>
+                <a
                 href={`mailto:${office.email}`}
                 className="text-white hover:text-gray-400"
               >
                 {office.email}
               </a>
-            </p>
-            <p className="text-lg text-white mt-4 mb-4">
-              <FaPhoneAlt className="inline-block mr-2 text-blue-500" />
-              <a href={`tel:${office.phone}`} className="text-white hover:text-gray-400">
+              </div>
+              
+            </div>
+
+
+            <div className="flex items-center justify-center gap-[13px] text-lg text-white mt-4 mb-4">
+              <div className='w-[45px] h-[45px] bg-[#062242] flex items-center justify-center rounded-[4px] text-center'>
+                <FaPhoneAlt className="inline-block text-[#09aff4]" />
+              </div>
+              <div className='flex flex-col items-start justify-start'>
+                <div className='text-[#09aff4] text-[20px] font-[500]'>
+                  Phone:
+                </div>
+                <a href={`tel:${office.phone}`} className="text-white hover:text-gray-400">
                 {office.phone}
               </a>
-            </p>
+              </div>
+              
+            </div>
+
+
+           
           </div>
         ))}
       </div>
