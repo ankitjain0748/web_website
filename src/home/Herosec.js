@@ -29,7 +29,7 @@ function Herosec() {
         <div className="">
             <div className="heroHome" >
                 <div className="w-[100%] max-w-[1320px] m-[auto] px-[15px] py-[40px] md:py-[50px] lg:py-[100px] flex items-center gap-[15px] flex-wrap lg:flex-nowrap">
-                    <div className="w-[100%] lg:w-[50%]">
+                    <div className="w-[100%] lg:w-[50%] relative z-[2]">
                         <div className="flex gap-[27px] group text-white ">
                             <Link to={"/"}><FaFacebookF size={20} /></Link>
                             <Link to={"/"}><FaYoutube size={20} /></Link>
@@ -58,8 +58,8 @@ function Herosec() {
                     </div>
 
 
-                    <div  ref={tiltRef} className="tilt-box  w-[100%] lg:w-[50%] z-[1]" >
-                        <img className='' src={Illustration} alt="Event Management " />
+                    <div  ref={tiltRef} className="relative tilt-box  w-[100%] text-center lg:w-[50%] z-[2]" >
+                        <img className='m-auto max-w-[80%] lg:max-w-[100%]' src={Illustration} alt="Event Management " />
                     </div>
 
                 </div>

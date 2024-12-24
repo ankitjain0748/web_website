@@ -3,7 +3,7 @@ import { FaRegFileCode } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 function ServiceCard() {
     return (
-        <div className="relative serviceBx min-h-[290px] flex flex-col justify-start items-start gap-[5px] border-solid border-[2px] border-[#09aff459] rounded-[10px] p-[30px] group">
+        <div className="relative serviceBx min-h-[290px] flex flex-col justify-start items-start gap-[5px] border-solid border-[2px] border-[#09aff459] rounded-[10px] p-[10px] md:p-[20px] lg:p-[30px] group">
             <div className="mb-[20px]">
                 <FaRegFileCode size={50} className="text-[#09aff4] group-hover:text-[#fff]" />
             </div>
