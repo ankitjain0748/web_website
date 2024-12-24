@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import logo from "../image/logo.png"
-import { RiMenu3Line } from "react-icons/ri";
 import { IoCloseSharp } from "react-icons/io5";
 import toast from 'react-hot-toast';
 import { IoMdLogOut } from "react-icons/io";
@@ -42,9 +41,29 @@ export default function Header() {
                         </Link>
                     </li>
                     <li>
+                        <Link to={"/services2"}>services 2
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to={"/services3"}>services 3
+                        </Link>
+                    </li>
+                    <li>
                         <Link to={"/protfolio"}>portfolio
                         </Link>
                     </li>
+
+                    <li>
+                        <Link to={"/protfolio2"}>portfolio 2
+                        </Link>
+                    </li>
+
+                    <li>
+                        <Link to={"/protfolio3"}>portfolio 3
+                        </Link>
+                    </li>
+
+                    
 
                     <li>
                         <Link to={"/blog"}>blog

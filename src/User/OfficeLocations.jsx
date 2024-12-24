@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
+import {  FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
 
 function OfficeLocations() {
   const offices = [

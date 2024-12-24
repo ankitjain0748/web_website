@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import { IoMdHome } from "react-icons/io";
-import ServiceCard from "../home/ServiceCard";
+import ServiceCard from "../Main/ServiceCard";
 // import StudentCard from "../home/StudenCard";
-import Testimonials from '../home/Testimonials';
+import Testimonials from '../Main/Testimonials';
 import { FaArrowRightLong } from "react-icons/fa6";
-import { FaLaptopCode, FaGraduationCap, FaCertificate } from 'react-icons/fa';
 
 
 
