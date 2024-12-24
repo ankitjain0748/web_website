@@ -1,99 +1,81 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+import { IoMdHome } from "react-icons/io";
+import ServiceCard from "../home/ServiceCard";
+// import StudentCard from "../home/StudenCard";
+import Testimonials from '../home/Testimonials';
+import { FaArrowRightLong } from "react-icons/fa6";
 import { FaLaptopCode, FaGraduationCap, FaCertificate } from 'react-icons/fa';
 
-const ServiceCard = ({ title, description }) => {
-    return (
-        <div className="p-4 bg-gray-100 rounded-md shadow-md mb-4">
-            <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
-            <p className="text-gray-600 mt-2">{description}</p>
-        </div>
-    );
-};
+
 
 const ServicesSection = () => {
     return (
-        <>
-            <div className="container mx-auto px-4 py-12">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {/* Left side - Brief description */}
-                    <div className="flex flex-col justify-center">
-                        <h2 className="text-3xl font-bold text-white mb-4">Services We Offer</h2>
-                        <p className="text-lg text-white mb-4">
-                            It sounds like NIT Solutions is launching an educational platform in Chomu focused on teaching web design, web development, and app development. This could be an excellent opportunity for individuals interested in gaining skills in these areas, especially considering the increasing demand for professionals with expertise in web and app development. Providing a platform for learning these skills could potentially benefit both aspiring developers and the tech industry in Chomu by fostering a more skilled workforce and facilitating innovation in digital technology.
-                        </p>
-                        <a
-                            href="#"
-                            className="text-blue-500 font-semibold hover:underline"
-                        >
-                            Click Registration
-                        </a>
+        <div>
+            <div className="max-w-[1320px] m-auto pt-[100px]">
+                <div>
+                    <h2 className="text-[55px] text-white text-center font-[700] mb-[5px]">Services</h2>
+                    <div className="flex items-center gap-[10px] text-center justify-center mb-[60px] ">
+                        <Link className="flex items-center gap-[6px] text-white text-[17px] font-[600]">
+                            <IoMdHome /> Home
+                        </Link>
+                        <span className="text-white text-[17px]">NIT Solutions</span>
                     </div>
-
-                    {/* Right side - List of services */}
-                    <div className="space-y-4 text-center">
-                        <a
-                            href="#"
-                            className="bg-blue-500 px-4 py-2 text-white font-semibold hover:underline inline-block"
-                        >
-                            See All Services
-                        </a>
-                    </div>
-
                 </div>
-            </div>
-            <div className="container mx-auto px-4 my-8">
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    {/* Card 1 */}
-                    <div className="bg-white shadow-lg rounded-lg p-6 hover:bg-black hover:text-white transition duration-300">
-                        <div className="flex justify-start mb-4">
-                            <FaLaptopCode className="text-3xl text-blue-600" />
-                        </div>
-                        <h5 className="text-xl font-semibold mb-2">DCA</h5>
-                        <p className="text-gray-700 mb-4">
-                            These titles are designed to be informative and SEO-friendly, making them appealing for...
-                        </p>
-                        <a href="#" className="text-blue-600 hover:text-white">Read More</a>
+                <div className="flex flex-wrap lg:flex-nowrap items-center gap-[15px] pb-[70px]">
+                    <div className="w-[100%] lg:w-[55%]">
+                        <h2 className="dots relative px-[10px] inline-flex mb-[10px] text-[#09aff4] text-[15px] md:text-[1rem] font-[600] uppercase">Services</h2>
+                        <h2 className="text-[1.7rem] md:text-[2rem] lg:text-[2.5rem] font-[500] text-white mb-[2px] capitalize">services we offer</h2>
+                        <p className="text-white text-[1rem] pr-[20px] lg:pr-[120px]">It sounds like NIT Solutions is launching an educational platform in Chomu focused on teaching web design, web development, and app development. This could be an excellent opportunity for individuals interested in gaining skills in these areas, especially considering the increasing demand for professionals with expertise in web and app development. Providing a platform for learning these skills could potentially benefit both aspiring developers and the tech industry in Chaum by fostering a more skilled workforce and facilitating innovation in digital technology.  <Link to={"/"} className="text-[#09aff4]"> Click Registration</Link></p>
+                    </div>
+                    <div className="w-[100%] lg:w-[45%] flex items-center justify-start lg:justify-end">
+                        <Link to={"/"} className="group inline-flex items-center gap-[10px] min-w-[180px] px-[35px] py-[15px] bg-[#09aff4] border-[2px] border-[#09aff4] rounded-tr-[15px] rounded-bl-[15px] text-[1.15rem] font-[500] text-[#fff] leading-[20px] capitalize text-center transition-all hover:bg-[transparent] border-[#09aff4] hover:text-[#09aff4] hover:transition-all">see all services <FaArrowRightLong className="group:hover:ms-[5px]" /></Link>
+                    </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[15px] row-gap-[15px] md:gap-[30px] md:row-gap-[40px]">
+                    <div>
+                        <ServiceCard />
                     </div>
 
-                    {/* Card 2 */}
-                    <div className="bg-white shadow-lg rounded-lg p-6 hover:bg-black hover:text-white transition duration-300">
-                        <div className="flex justify-start mb-4">
-                            <FaGraduationCap className="text-3xl text-blue-600" />
-                        </div>
-                        <h5 className="text-xl font-semibold mb-2">O Level</h5>
-                        <p className="text-gray-700 mb-4">
-                            "O Level" is a certification course in the field of Information Technology (IT) offered...
-                        </p>
-                        <a href="#" className="text-blue-600 hover:text-white">Read More</a>
+                    <div>
+                        <ServiceCard />
                     </div>
 
-                    {/* Card 3 */}
-                    <div className="bg-white shadow-lg rounded-lg p-6 hover:bg-black hover:text-white transition duration-300">
-                        <div className="flex justify-start mb-4">
-                            <FaCertificate className="text-3xl text-blue-600" />
+                    <div>
+                        <ServiceCard />
+                    </div>
+
+                    <div>
+                        <ServiceCard />
+                    </div>
+
+                    <div>
+                        <ServiceCard />
+                    </div>
+
+                    <div>
+                        <ServiceCard />
+                    </div>
+                </div>
+
+                <div className='bg-[#060922] px-[10px] md:px-[40px] lg:px-[90px]'>
+                    <div className='max-w-[1320px] mx-[auto] pt-[50px] lg:pt-[100px] pb-[20px] lg:pb-[100px]'>
+                        <div className='text-center'>
+
+                            <h2 className="dots relative px-[10px] inline-flex mt-[30px] mb-[5px] text-[#09aff4] text-[15px] text-[1rem] font-[600] uppercase text-center justify-center">Testimonials</h2>
                         </div>
-                        <h5 className="text-xl font-semibold mb-2">PGDCA</h5>
-                        <p className="text-gray-700 mb-4">
-                            The Post Graduate Diploma in Computer Applications (PGDCA) is a one-year postgraduate d...
-                        </p>
-                        <a href="#" className="text-blue-600 hover:text-white">Read More</a>
+
+                        <h2 className="text-[1.5rem] md:text-[2.0rem] lg:text-[2.5rem] font-[500] text-white mb-[2px] capitalize text-center">NIT testmonials</h2>
+
+                        <div>
+                            <Testimonials />
+                        </div>
                     </div>
                 </div>
             </div>
-            <section className="contact-us section-padding text-white mt-8 mb-4">
-                <div className="container text-center">
-                    <h1 className="text-3xl font-semibold mb-4">Contact Us</h1>
-                    <p className="text-lg  mb-2">Get in touch with us</p>
-                    <p className="">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis id atque dignissimos repellat quae ullam.
-                    </p>
-                </div>
-            </section>
-
-
-
-        </>
+        </div>
     );
 };
 

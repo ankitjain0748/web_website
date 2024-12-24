@@ -26,11 +26,11 @@ function OfficeLocations() {
   return (
     <section className="max-w-[1320px] mx-[auto] pt-[50px] px-[15px] pb-[60px]">
       <h1 className="text-[34px] text-white font-[500] text-center mb-8">Our Offices Around the City</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[15px] md:gap-[20px]">
         {offices.map((office, index) => (
           <div
             key={index}
-            className="h-[370px] px-[15px] py-[20px] flex flex-col items-start justify-start border-[1px] border-t-[4px] border-t-[#09AFF4] border-[#06426B] "
+            className="h-[100%] lg:h-[370px] px-[15px] py-[20px] flex flex-col items-start justify-start border-[1px] border-t-[4px] border-t-[#09AFF4] border-[#06426B] "
           >
             <h2 className="relative pb-[10px] text-2xl font-bold text-white mt-4 mb-4 ">{office.location} <span className='w-[65px] absolute bottom-[0] left-[0] block  border-b-[2px] border-[#09aff4]'></span> </h2>
             <p className="text-[19px] text-[#BEBFC5] font-[600] mt-4 mb-4">
