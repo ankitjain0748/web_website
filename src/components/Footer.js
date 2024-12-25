@@ -12,8 +12,8 @@ function Footer() {
             <div className="flex flex-wrap lg:flex-nowrap gap-[20px] lg:gap-[40px]">
               {/* First Column - Extra Space */}
               <div className="w-[100%] mb-[40px] lg:mb-[0] lg:w-[41%]">
-                <a href="https://flowbite.com/" className="flex items-center">
-                  <img src={nitsky} className="max-w-[150px]" alt="Logo" /></a>
+                <Link to="https://flowbite.com/" className="flex items-center">
+                  <img src={nitsky} className="max-w-[150px]" alt="Logo" /></Link>
                 <div className="flex flex-col items-center justify-center text-white pt-[20px]">
                   <div className="">
                     <p className="text-lg mb-6 ">
@@ -55,33 +55,33 @@ function Footer() {
                   {/* NIT Introduction */}
                   <li className="group flex items-center justify-start gap-[10px]">
                     <FaArrowRight className=" text-[#09aff4] text-[12px]" />
-                    <a href="#" className=" transition group-hover:translate-x-0.5 text-white hover:none">
+                    <Link to="#" className=" transition group-hover:translate-x-0.5 text-white hover:none">
                       NIT Introduction
-                    </a>
+                    </Link>
                   </li>
 
                   {/* Google */}
                   <li className="group flex items-center justify-start gap-[10px]">
                     <FaArrowRight className=" text-[#09aff4] text-[12px]" />
-                    <a href="https://www.google.com" className=" transition group-hover:translate-x-0.5 text-white hover:none">
+                    <Link to="https://www.google.com" className=" transition group-hover:translate-x-0.5 text-white hover:none">
                       Google
-                    </a>
+                    </Link>
                   </li>
 
                   {/* Dribbble */}
                   <li className="group flex items-center justify-start gap-[10px]">
                     <FaArrowRight className=" text-[#09aff4] text-[12px]" />
-                    <a href="https://www.dribbble.com" className=" transition group-hover:translate-x-0.5 text-white hover:none">
+                    <Link to="https://www.dribbble.com" className=" transition group-hover:translate-x-0.5 text-white hover:none">
                       Dribbble
-                    </a>
+                    </Link>
                   </li>
 
                   {/* LinkedIn */}
                   <li className="group flex items-center justify-start gap-[10px]">
                     <FaArrowRight className=" text-[#09aff4] text-[12px]" />
-                    <a href="https://www.linkedin.com" className=" transition group-hover:translate-x-0.5 text-white hover:none">
+                    <Link to="https://www.linkedin.com" className=" transition group-hover:translate-x-0.5 text-white hover:none">
                       LinkedIn
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -95,33 +95,33 @@ function Footer() {
                   {/* Registration */}
                   <li className="group flex items-center justify-start gap-[10px]">
                     <FaArrowRight className=" text-[#09aff4] text-[12px]" />
-                    <a href="#" className=" transition group-hover:translate-x-0.5 text-white hover:none">
+                    <Link to="#" className=" transition group-hover:translate-x-0.5 text-white hover:none">
                       Registration
-                    </a>
+                    </Link>
                   </li>
 
                   {/* About Us */}
                   <li className="group flex items-center justify-start gap-[10px]">
                     <FaArrowRight className=" text-[#09aff4] text-[12px]" />
-                    <a href="#" className=" transition group-hover:translate-x-0.5 text-white hover:none">
+                    <Link to="#" className=" transition group-hover:translate-x-0.5 text-white hover:none">
                       About Us
-                    </a>
+                    </Link>
                   </li>
 
                   {/* Services */}
                   <li className="group flex items-center justify-start gap-[10px]">
                     <FaArrowRight className=" text-[#09aff4] text-[12px]" />
-                    <a href="#" className=" transition group-hover:translate-x-0.5 text-white hover:none">
+                    <Link to="#" className=" transition group-hover:translate-x-0.5 text-white hover:none">
                       Services
-                    </a>
+                    </Link>
                   </li>
 
                   {/* Portfolio */}
                   <li className="group flex items-center justify-start gap-[10px]">
                     <FaArrowRight className=" text-[#09aff4] text-[12px]" />
-                    <a href="#" className=" transition group-hover:translate-x-0.5 text-white hover:none">
+                    <Link to="#" className=" transition group-hover:translate-x-0.5 text-white hover:none">
                       Portfolio
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -136,9 +136,9 @@ function Footer() {
                   {/* Email */}
                   <li className="flex gap-[10px] items-start">
                     <MdEmail className="text-[24px] text-[#09aff4]" />
-                    <a href="mailto:abhishek2kumawat@gmail.com" className=" transition group-hover:translate-x-0.5 text-white hover:none">
+                    <Link to="mailto:abhishek2kumawat@gmail.com" className=" transition group-hover:translate-x-0.5 text-white hover:none">
                       abhishek2kumawat@gmail.com
-                    </a>
+                    </Link>
                   </li>
 
                   {/* Location */}
@@ -151,54 +151,54 @@ function Footer() {
                   {/* Phone */}
                   <li className="flex gap-[10px] items-start">
                     <MdPhone className="text-[24px] text-[#09aff4]" />
-                    <a href="tel:+919785653157" className=" transition group-hover:translate-x-0.5 text-white hover:none">
+                    <Link to="tel:+919785653157" className=" transition group-hover:translate-x-0.5 text-white hover:none">
                       +91-9785653157
-                    </a>
+                    </Link>
                   </li>
                 </ul>
 
                 <div className="pt-[35px] flex justify-start items-center gap-[10px] ">
                   <div className="bg-[#09aff4] space-x-3 p-[8px]  text-white  rounded-md ">
-                    <a
-                      href="https://www.facebook.com"
+                    <Link
+                      to="https://www.facebook.com"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-gray-200 text-xl"
                     >
                       <FaFacebookF />
-                    </a>
+                    </Link>
                   </div>
                   <div className="bg-[#09aff4] space-x-3 p-[8px]  text-white  rounded-md">
 
-                    <a
-                      href="https://www.instagram.com"
+                    <Link
+                      to="https://www.instagram.com"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-gray-200 text-[20px]"
                     >
                       <FaInstagram />
-                    </a>
+                    </Link>
                   </div>
                   <div className="bg-[#09aff4] space-x-3 p-[8px]  text-white  rounded-md">
-                    <a
-                      href="https://www.twitter.com"
+                    <Link
+                      to="https://www.twitter.com"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-gray-200 text-xl"
                     >
                       <FaTwitter />
-                    </a>
+                    </Link>
                   </div>
                   <div className="bg-[#09aff4] space-x-3 p-[8px]  text-white  rounded-md ">
 
-                    <a
-                      href="https://www.youtube.com"
+                    <Link
+                      to="https://www.youtube.com"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-gray-200 text-xl"
                     >
                       <FaYoutube />
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
@@ -219,19 +219,19 @@ function Footer() {
 
             {/* Right Section */}
             <div className="space-x-4">
-              <a
-                href="#"
+              <Link
+                to="#"
                 className="text-white hover:text-gray-200"
               >
                 Terms of Use
-              </a>
+              </Link>
               <span className="text-white">|</span>
-              <a
-                href="#"
+              <Link
+                to="#"
                 className="text-white hover:text-gray-200"
               >
                 Privacy Policy
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -2,15 +2,15 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
-import ServiceCard from "../home/ServiceCard";
-import StudentCard from "../home/StudenCard";
+import ServiceCard from "../Main/ServiceCard";
+import StudentCard from "../Main/StudenCard";
 import trusted from "../image/3.png";
 import choseimg from "../image/1.png";
 import { IoRibbon } from "react-icons/io5";
 // import ParticleBackground from "./ParticleBackground";
 import VanillaTilt from 'vanilla-tilt';
-import Testimonials from '../home/Testimonials';
-import SwiperComponent from "../home/SwiperComponent";
+import Testimonials from '../Main/Testimonials';
+import SwiperComponent from "../Main/SwiperComponent";
 
 import { IoMdHome } from "react-icons/io";
 function Index() {

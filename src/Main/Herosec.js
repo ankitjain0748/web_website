@@ -25,6 +25,7 @@ function Herosec() {
 
 
     return (
+
         <div className="">
             <div className="heroHome" >
                 <div className="w-[100%] max-w-[1320px] m-[auto] px-[15px] py-[40px] md:py-[50px] lg:py-[100px] flex items-center gap-[15px] flex-wrap lg:flex-nowrap">

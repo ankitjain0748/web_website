@@ -346,7 +346,7 @@ function Page() {
                 <h2 className="text-[1.5rem] md:text-[2.0rem] lg:text-[2.5rem] font-[500] text-white mb-[2px] capitalize text-center">NIT testmonials</h2>
 
                 <div>
-                <Testimonials />
+                    <Testimonials />
                 </div>
             </div>
         </div>
