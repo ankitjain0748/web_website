@@ -40,7 +40,7 @@ function Index() {
 
     return (
         <div>
-            <div className="max-w-[1320px] m-auto pt-[100px]">
+            <div className="max-w-[1320px] px-[15px] m-auto pt-[100px]">
                 <h2 className="text-[55px] text-white text-center font-[700] mb-[5px]">About Us</h2>
                 <div className="flex items-center gap-[10px] text-center justify-center mb-[60px] ">
                     <Link className="flex items-center gap-[6px] text-white text-[17px] font-[600]">
@@ -195,7 +195,7 @@ function Index() {
 
 
                 <div className='bg-[#060922] px-[10px] md:px-[40px] lg:px-[90px]'>
-                    <div className='max-w-[1320px] mx-[auto] pt-[50px] lg:pt-[100px] pb-[20px] lg:pb-[100px]'>
+                    <div className='max-w-[1320px] px-[15px] mx-[auto] pt-[50px] lg:pt-[100px] pb-[20px] lg:pb-[100px]'>
                         <div className='text-center'>
 
                             <h2 className="dots relative px-[10px] inline-flex mt-[30px] mb-[5px] text-[#09aff4] text-[15px] text-[1rem] font-[600] uppercase text-center justify-center">Testimonials</h2>
@@ -210,7 +210,7 @@ function Index() {
                 </div>
             </div>
             <div className='bg-[#09aff4] px-[20px] md:px-[40px] lg:px-[90px]'>
-                <div className='max-w-[1320px] mx-[auto] pt-[60px] pb-[60px] lg:pt-[100px] lg:pb-[100px]'>
+                <div className='max-w-[1320px] px-[15px] mx-[auto] pt-[60px] pb-[60px] lg:pt-[100px] lg:pb-[100px]'>
                     <h2 className='text-[1.45rem] md:text-[1.75rem] text-[#fff] text-center mb-[40px] lg:mb-[60px] font-[500]'>TOP PLACEMENTS IN</h2>
                     <div>
                         <SwiperComponent />
@@ -218,7 +218,7 @@ function Index() {
                 </div>
             </div>
 
-            <div className='max-w-[1320px] m-auto'>
+            <div className='max-w-[1320px] px-[15px] m-auto'>
                 <div className="mb-[40px] md:mb-[60px] lg:mb-[100px] mt-[100px]">
                     <div className="flex flex-wrap md:flex-nowrap items-center gap-[15px] pb-[40px] lg:pb-[70px]">
                         <div className="w-[100%] md:w-[55%]">
@@ -281,7 +281,7 @@ function Index() {
                 </div>
 
                 <div className='bg-[#060922] px-[10px] md:px-[40px] lg:px-[90px]'>
-                    <div className='max-w-[1320px] mx-[auto] pt-[50px] lg:pt-[100px] pb-[20px] lg:pb-[100px]'>
+                    <div className='max-w-[1320px] px-[15px] mx-[auto] pt-[50px] lg:pt-[100px] pb-[20px] lg:pb-[100px]'>
                         <div className='text-center'>
 
                             <h2 className="dots relative px-[10px] inline-flex mt-[30px] mb-[5px] text-[#09aff4] text-[15px] text-[1rem] font-[600] uppercase text-center justify-center">Registration</h2>
@@ -290,7 +290,7 @@ function Index() {
                         <h2 className="text-[1.5rem] md:text-[2.0rem] lg:text-[2.5rem] font-[500] text-white mb-[2px] capitalize text-center">get in totch with us</h2>
 
                         <div>
-                            <p className='text-center text-[17px] text-[#fff] px-[200px]'>To register for web design, web development, or app development services with NIT Solutions,
+                            <p className='text-center text-[17px] text-[#fff] px-[2px] md:px-[20px] lg:px-[200px]'>To register for web design, web development, or app development services with NIT Solutions,
 you should follow these steps:</p>
 
 <div className='text-center mt-[20px]'>

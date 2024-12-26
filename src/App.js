@@ -11,8 +11,8 @@ import Gallery from './Gallery/Gallery';
 import BlogList from './Blog/Blog';
 import ServicesSection from './Services/Index';
 import Services2 from './Services/Services2';
-import Services3 from './Services/Services3';
 import Protfoli1 from './protfolio/Protfoli1';
+import Protfoilo2 from './protfolio/Protfoilo2';
 
 function App() {
   return (
@@ -31,17 +31,15 @@ function App() {
         </Route>
         <Route path='/services2' element={<Services2 />}>
         </Route>
-        <Route path='/services3' element={<Services3 />}>
-        </Route>
+       
         <Route path='/gallery' element={<Gallery />}>
         </Route>
         <Route path='/blog' element={<BlogList />}>
         </Route>
         <Route path='/protfolio' element={<Protfoli1 />}>
         </Route>
-        <Route path='/protfolio1' element={<Protfoli1 />}>
-        </Route>
-        <Route path='/protfolio2' element={<Protfoli1 />}>
+        
+        <Route path='/portfoli2' element={<Protfoilo2 />}>
         </Route>
       </Routes>
       <Footer />
