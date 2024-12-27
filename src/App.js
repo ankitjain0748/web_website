@@ -13,15 +13,15 @@ import ServicesSection from './Services/Index';
 import Services2 from './Services/Services2';
 import Protfoli1 from './protfolio/Protfoli1';
 import Protfoilo2 from './protfolio/Protfoilo2';
-import  Protfoli3 from "./protfolio/Protfoli3"
+import Protfoli3 from "./protfolio/Protfoli3"
 
 function App() {
   return (
     <Router>
       <Header />
       <Routes>
-      <Route path='/' element={<Page />}>
-      </Route>
+        <Route path='/' element={<Page />}>
+        </Route>
         <Route path='/sing_up' element={<User />}>
         </Route>
         <Route path='/about_us' element={<About />}>
@@ -32,14 +32,14 @@ function App() {
         </Route>
         <Route path='/services2' element={<Services2 />}>
         </Route>
-       
+
         <Route path='/gallery' element={<Gallery />}>
         </Route>
         <Route path='/blog' element={<BlogList />}>
         </Route>
         <Route path='/protfolio' element={<Protfoli1 />}>
         </Route>
-        
+
         <Route path='/portfoli2' element={<Protfoilo2 />}>
         </Route>
         <Route path='/portfoli3' element={<Protfoli3 />}>
