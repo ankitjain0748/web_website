@@ -13,6 +13,7 @@ import ServicesSection from './Services/Index';
 import Services2 from './Services/Services2';
 import Protfoli1 from './protfolio/Protfoli1';
 import Protfoilo2 from './protfolio/Protfoilo2';
+import  Protfoli3 from "./protfolio/Protfoli3"
 
 function App() {
   return (
@@ -40,6 +41,9 @@ function App() {
         </Route>
         
         <Route path='/portfoli2' element={<Protfoilo2 />}>
+        </Route>
+        <Route path='/portfoli3' element={<Protfoli3 />}>
+
         </Route>
       </Routes>
       <Footer />

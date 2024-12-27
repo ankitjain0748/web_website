@@ -51,12 +51,12 @@ export default function Header() {
                     </li>
 
                     <li>
-                        <Link to={"/protfolio2"}>portfolio 2
+                        <Link to={"/portfoli2"}>portfolio 2
                         </Link>
                     </li>
 
                     <li>
-                        <Link to={"/protfolio3"}>portfolio 3
+                        <Link to={"/portfoli3"}>portfolio 3
                         </Link>
                     </li>
 
