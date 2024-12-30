@@ -14,7 +14,7 @@ const Protfoilo2 = () => {
         <div>
             <div className="max-w-[1320px] px-[15px] m-auto pt-[100px]">
                 <div>
-                    <h2 className="text-[55px] text-white text-center font-[700] mb-[5px]">NIT Students</h2>
+                    <h2 className="text-[55px] text-white text-center font-[700] mb-[5px]">Placement Students</h2>
                     <div className="flex items-center gap-[10px] text-center justify-center mb-[60px] ">
                         <Link className="flex items-center gap-[6px] text-white text-[17px] font-[600]">
                             <IoMdHome /> Home

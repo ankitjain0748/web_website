@@ -9,6 +9,7 @@ import User from './User/Index';
 import About from './About/Index';
 import Gallery from './Gallery/Gallery';
 import BlogList from './Blog/Blog';
+import BlogDetailPage from './Blog/Blogdetail';
 import ServicesSection from './Services/Index';
 import Services2 from './Services/Services2';
 import Protfoli1 from './protfolio/Protfoli1';
@@ -35,16 +36,20 @@ function App() {
 
         <Route path='/gallery' element={<Gallery />}>
         </Route>
+
         <Route path='/blog' element={<BlogList />}>
         </Route>
+
+        <Route path='/blog' element={<BlogDetailPage />}>
+        </Route>
+
         <Route path='/protfolio' element={<Protfoli1 />}>
         </Route>
 
         <Route path='/portfoli2' element={<Protfoilo2 />}>
         </Route>
-        <Route path='/portfoli3' element={<Protfoli3 />}>
 
-        </Route>
+        <Route path='/portfoli3' element={<Protfoli3 />}></Route>
       </Routes>
       <Footer />
     </Router>
