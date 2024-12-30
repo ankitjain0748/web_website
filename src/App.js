@@ -40,7 +40,7 @@ function App() {
         <Route path='/blog' element={<BlogList />}>
         </Route>
 
-        <Route path='/blog' element={<BlogDetailPage />}>
+        <Route path='/blog-page' element={<BlogDetailPage />}>
         </Route>
 
         <Route path='/protfolio' element={<Protfoli1 />}>
